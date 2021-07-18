@@ -1,0 +1,103 @@
+header{
+    width:1300px;
+    margin:20px auto 0;
+
+    display:grid;
+    grid-template-columns: 3fr 700px 3fr;
+    grid-template-rows: minmax(200px,auto);
+    grid-gap:10px;
+    overflow: hidden;
+}
+
+.header-child{
+    /* background-color: hotpink; */
+}
+.headermenu{
+    z-index: 1000;
+}
+
+/******************* Header Menu **********************/
+.headmenu > li {
+    line-height:45px;
+    background-color: var(--gray);
+    border-bottom:1px solid #ddd;
+    padding-left:20px;
+    position:relative;
+    transition: 300ms;
+}
+.menu-arrow{
+    float:right;
+    margin-right:20px;
+    visibility: hidden;
+}
+.headmenu > li:hover .menu-arrow{
+    visibility: visible;
+}
+.headmenu > li:hover{
+    box-shadow: 10px 0px 0px inset red;
+}
+.level1{
+    position: absolute;
+    left:280px;
+    top:0px;
+    display:none;
+}
+.level1 > li{
+    line-height:45px;
+    width:300px;
+    background-color: var(--gray);
+    border-bottom:1px solid #ddd;
+    padding-left:50px;
+    position:relative;
+}
+.headmenu > li:hover .level1{
+    display:block;
+}
+.level1-menu-arrow{
+    float:right;
+    margin-right:20px;
+    visibility: hidden;
+    color:hotpink;
+}
+.level1 > li:hover .level1-menu-arrow{
+    visibility: visible;
+}
+.level2{
+    position: absolute;
+    left:300px;
+    top:0px;
+    width:300px;
+    display:none;
+    background-color: var(--gray);
+}
+.level2 > li{
+    line-height:45px;
+    width:300px;
+    background-color: var(--gray);
+    border-bottom:1px solid #ddd;
+    padding-left:50px;
+    position:relative;
+}
+.level1 > li:hover .level2{
+    display:block;
+}
+
+/******************* Slide Show **********************/
+.slides{
+    width:3500px;
+    display:flex;
+    transition: 1s;
+    
+}
+.slide{
+    width:100%;
+    overflow: hidden;
+}
+.slide > img{
+    width:700px;
+    height:400px;
+}
+
+.slides:hover{
+    margin-left:-700px;
+}
