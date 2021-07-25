@@ -1,0 +1,16 @@
+.weekly-deal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+.deal-box{
+    display:grid;
+    grid-template-columns:  1fr 1.5fr ;
+}
+.deal-box-right{
+    display:grid;
+    grid-template-columns: repeat(2,1fr) ;
+}
+.deal-box-left > img{
+    height:200px;
+}

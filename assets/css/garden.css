@@ -1,0 +1,57 @@
+.garden{
+    display:flex;
+}
+.garden-aside > h3{
+    position: relative;
+    top:-250px;
+    left:50px;
+    color:#fff;
+}
+.garden-aside > a{
+    position: relative;
+    top:-150px;
+    background-color: hotpink;
+    padding:8px 10px;
+    border-radius:30px;
+    left:50px;
+    color:#fff;
+}
+.gardern-box{
+    flex:1;
+}
+.garden-box-inner{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.garden-box-card{
+    background-color: #fff;
+    padding:14px 15px;
+}
+.garden-box-upper > .garden-box-card{
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+.garden-box-upper > .garden-box-card:last-child{
+    border-right:none;
+}
+.garden-box-lower > .garden-box-card{
+    border-right:1px solid #ddd;
+}
+.garden-box-lower > .garden-box-card:last-child{
+    border:none;
+}
+.garden-box-card > h3{
+    font-size: 18px;
+    color:#888;
+}
+.garden-box-card > p{
+    font-size: 14px;
+    color:#999;
+    text-align:justify;
+}
+.garden-box-card-img1{
+    float:left;
+}
+.garden-box-card-img2{
+    float:right;
+}

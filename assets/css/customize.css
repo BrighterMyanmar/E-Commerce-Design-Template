@@ -1,0 +1,39 @@
+.customize{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+}
+.customize-box{
+    background-color: #fff;
+    padding:20px;
+    border-radius:20px;
+}
+.customize-upper{
+    display:flex;
+}
+
+.shipping-icon{
+    transform:rotateY(180deg);
+}
+
+.customize-lower {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+}
+.customize-card > h3{
+    text-align:center;
+    margin:10px 0;
+}
+.card-body{
+    padding:5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    border-radius:5px;
+}
+
+.card-body > img{
+    border-radius:5px;
+}
+

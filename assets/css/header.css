@@ -9,9 +9,6 @@ header{
     overflow: hidden;
 }
 
-.header-child{
-    /* background-color: hotpink; */
-}
 .headermenu{
     z-index: 1000;
 }

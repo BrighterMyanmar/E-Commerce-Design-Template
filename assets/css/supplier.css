@@ -1,0 +1,33 @@
+.supplier{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.supplier-gorup {
+    background-color: rgb(255, 255, 255);
+    padding:5px;
+    border-radius:10px;
+}
+.supplier-gorup > h1{
+    font-family: Cambria;
+    margin-bottom:5px;
+    font-size:18px;
+    color:#888;
+    padding-left:10px;
+}
+.supplier-box{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.supplier-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.supplier-card > .price{
+    color: rgb(126, 125, 125);
+}
+.supplier-card > .description{
+    color: rgb(126, 125, 125);
+}

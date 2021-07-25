@@ -29,4 +29,29 @@ var myInterval = setInterval(()=>{
         mLeft = 0;
         slides.style.marginLeft = mLeft + "px";
     }
-},5000)
+},5000);
+
+let moveMargin = function(mg){
+    categoryBox.style.marginLeft = mg + "px";
+}
+
+let categoryBox = document.querySelector('.category-box');
+let rightSlideArrow = document.querySelector('.right-slide-arrow');
+let leftSlideArrow = document.querySelector('.left-slide-arrow');
+
+let mi = 0;
+rightSlideArrow.addEventListener('click',()=>{
+    console.log(categoryBox.children.length);
+    if(mi + 7 < categoryBox.children.length){
+        mi += 1;
+    }
+    console.log(mi);
+    moveMargin(-mi*150);
+});
+leftSlideArrow.addEventListener('click',()=>{
+    if(mi > 0){
+        mi -= 1;
+    }
+    moveMargin(-(mi*150));
+});
+

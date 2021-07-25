@@ -37,6 +37,13 @@
 a{text-decoration: none;}
 ul{list-style-type: none;}
 
+body{
+    background-color: rgb(236, 236, 236);
+}
+/******************* Utilities *******************/
+.text-accent{
+    color:var(--accent)
+}
 /* **************** mobile-nav ******************* */
  .mobile-nav{
     background-color: var(--primary);
@@ -70,6 +77,12 @@ ul{list-style-type: none;}
 .container{
     width:1300px;
     margin:0 auto;
+}
+.my-5{
+    margin:50px 0;
+}
+.text-primary{
+    color:rgb(54, 114, 182);
 }
 nav{
     display: flex;
