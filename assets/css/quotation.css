@@ -1,0 +1,58 @@
+.quotation{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+.qutotation-box{
+    color:#fff;
+    height:350px;
+}
+.quotation-box-left{
+    background-image: url('../imgs/quotation-bg.png');
+}
+.quotation-items{
+    display:flex;
+    flex-direction: row;
+}
+.quotation-items > div{
+    margin:20px 0 0 50px;
+}
+.quotation-box-left > h2 {
+    margin:50px 0 0 50px;
+}
+.quotation-learn-more{
+    border:1px solid #fff;
+    padding:10px 20px;
+    margin:20px 0 0 50px;
+    border-radius:50px;
+    color:#fff;
+    background-color: transparent;
+}
+.quotation-box-right{
+    background-color: #fff;
+    border:5px solid #ddd;
+}
+.quotation-box-right > h1,p,form{
+    color:#000;
+    margin:20px 0 0 30px;
+}
+.quotation-box-right > form{
+    color:#000;
+    margin:20px 0 0 50px;
+}
+.quotation-box-right > form > input:first-child{
+    width:340px;
+    margin-bottom:10px;
+}
+.quotation-box-right > form > input,select{
+    padding:10px;
+    border:1px solid #ddd;
+}
+.quotation-request-btn{
+    border:none;
+    margin-top:20px;
+    padding:10px 20px;
+    background-color: tomato;
+    color:#fff;
+    border-radius:20px;
+}
