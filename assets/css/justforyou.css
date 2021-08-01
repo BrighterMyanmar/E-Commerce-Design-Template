@@ -1,0 +1,33 @@
+.justforyou{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap:10px;
+}
+.justforyou-card{
+    background-color: #fff;
+}
+.justforyou-card > a{
+    display:block;
+    color:rgb(100, 97, 97);
+    padding:5px 20px;
+    margin:0;
+}
+.justforyou-card > a:hover{
+    text-decoration:underline;
+}
+.justforyou-card > p.price{
+    color:rgb(24, 22, 22);
+    padding:5px 20px;
+    margin:0;
+}
+.justforyou-card > p:last-child{
+    color:rgb(95, 88, 88);
+    font-size:14px;
+    padding:5px 20px;
+    margin:0;
+}
+.justforyou-card > img {
+    display:block;
+    margin:0 auto;
+    padding:10px 0;
+}

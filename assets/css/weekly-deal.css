@@ -6,12 +6,16 @@
 .deal-box{
     display:grid;
     grid-template-columns:  1fr 1.5fr ;
+    
 }
 .deal-box-right{
     margin-left:20px;
     display:grid;
     grid-template-columns: repeat(2,1fr) ;
     grid-gap:10px;
+}
+.deal-box-left{
+    position:relative;
 }
 .deal-box-left > img{
     height:200px;
@@ -30,8 +34,8 @@
     border-radius:20px;
 }
 .deal-title-box{
-    position:relative;
-    top:-200px;
+    position:absolute;
+    top:0px;
 }
 .deal-title-box > h2 , p{
     color:#fff;
