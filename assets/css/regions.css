@@ -1,0 +1,25 @@
+.regions{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.region-box{
+    display:flex;
+    align-items: center;
+}
+.region-box > img{
+    max-width:30px;
+    max-height:30px;
+    margin-right:10px;
+}
+.region-box > span{
+    color:rgb(102, 99, 99);
+}
+.region-box > span > a{
+    color:rgb(88, 165, 216);
+}
+
+.login_bar{
+    display:block;
+    margin:50px auto;
+}

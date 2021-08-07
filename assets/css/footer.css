@@ -1,0 +1,107 @@
+footer{
+    background-color: rgb(61, 63, 78);
+}
+.inner-footer{
+    min-height:500px;
+    margin:0 auto;
+}
+.inner-footer > p{
+    padding-top:50px;
+    color:#fff;
+    text-align:center;
+}
+
+.subscribe{
+    width:420px;
+    margin:0 auto;
+}
+.subscribe > input:first-child{
+    width:300px;
+    padding:10px 20px;
+    background-color: rgb(26, 29, 54);
+    border:1px solid #fff;
+}
+.subscribe > input:first-child:focus{
+    border:none;
+    outline:none;
+}
+.send-btn{
+    padding:10px 20px;
+    background-color: transparent;
+    border:1px solid #fff;
+    border-radius:5px;
+    color:#fff;
+}
+.warning-text{
+    color:gray;
+    font-size:12px;
+}
+
+.footer-nav{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    margin:50px 0;
+}
+
+.footer-nav-box > h3{
+    text-align:center;
+    color:#fff;
+    margin:10px 0;
+}
+.footer-nav-box > ul{
+    padding-left:50px;
+}
+.footer-nav-box > ul > li > a{
+   
+    color:#fff;
+    font-size:13px;
+}
+hr{
+    height:0.5px;
+    border:none;
+    background-color: rgb(31, 30, 30);
+}
+.footer-lower{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+.footer-lower-box{
+    display:flex;
+    margin:50px;
+}
+.footer-lower-box > span {
+    color:#fff;
+}
+.download-btn{
+    color:rgb(255, 255, 255);
+    font-size:12px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border:none;
+    padding:2px 10px;
+    border-radius:5px;
+    margin:0 3px;
+}
+.btn-apple{
+    background-color:rgb(170, 167, 167);
+}
+.btn-android{
+    background-color:rgb(72, 199, 93);
+}
+.btn-android:hover{
+    background-color: hotpink;
+}
+.download-btn > .icon{
+    font-size:20px;
+    padding-right:10px;
+}
+.icon-box{
+    background-color: #fff;
+    padding:1px 5px;
+    max-height:20px;
+
+    border-radius:5px;
+    margin-left:3px;
+}
