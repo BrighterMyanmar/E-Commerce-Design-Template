@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="icon" href="./assets/imgs/bm.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <nav>
+                <img src="./assets/imgs/store.png" alt="" width="150px">
+                <ul class="navul">
+                    <li><a href="#">Product</a></li>
+                    <li class="active"><a href="#">Socail</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Profolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <img src="./assets/svgs/cart.svg" alt="" width="20px">
+                <span class="cart-count">30</span>
+            </nav>
+        </div>
+        <div class="products container">
+
+        </div>
+    </div>
+
+    <script>
+        let productStr = "";
+        let productDiv = document.querySelector('.products');
+        for (let i = 0; i < 50; i++) {
+            let t = i;
+            z = t % 5;
+            z += 1;
+            productStr += `
+                <div class="product-card">
+                    <img src="./assets/imgs/shirt${z}.jpg" alt="" class="product-img">
+                    <div class="card-body">
+                        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <p class="product-price">$6.86 - $8.10</p>
+                        <p class="product-pieces">1 Piece (MOQ)</p>
+                    </div>
+                </div>
+            `;
+        }
+        productDiv.innerHTML = productStr;
+    </script>
+</body>
+
+</html>

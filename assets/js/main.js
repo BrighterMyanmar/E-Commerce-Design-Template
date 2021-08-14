@@ -16,53 +16,22 @@ for (let i = 0; i < lis.length; i++) {
     })
 }
 
-let i = 0;
-let mLeft = 0;
-let slides = document.querySelector('.slides');
-var myInterval = setInterval(() => {
-    mLeft += 700;
-    i++;
-    if (i <= 4) {
-        slides.style.marginLeft = -mLeft + "px";
-    } else {
-        i = 0;
-        mLeft = 0;
-        slides.style.marginLeft = mLeft + "px";
-    }
-}, 5000);
+let images = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
 
-let moveMargin = function (mg) {
-    categoryBox.style.marginLeft = mg + "px";
+let i = 0;
+
+let changeImage = () => {
+
+    if(i < 4){ 
+        i++; 
+        document.slide.src = `./assets/imgs/${images[i]}`;
+    }
+    else {
+        i = 0;
+        document.slide.src = `./assets/imgs/${images[i]}`;
+    }
+  
+    setTimeout('changeImage()',3000);
 }
 
-let categoryBox = document.querySelector('.category-box');
-let rightSlideArrow = document.querySelector('.right-slide-arrow');
-let leftSlideArrow = document.querySelector('.left-slide-arrow');
-
-let mi = 0;
-rightSlideArrow.addEventListener('click', () => {
-    console.log(categoryBox.children.length);
-    if (mi + 7 < categoryBox.children.length) {
-        mi += 1;
-    }
-    console.log(mi);
-    moveMargin(-mi * 150);
-});
-leftSlideArrow.addEventListener('click', () => {
-    if (mi > 0) {
-        mi -= 1;
-    }
-    moveMargin(-(mi * 150));
-});
-
-let timerHour = document.querySelector('.timer-hour');
-let timerMinute = document.querySelector('.timer-minus');
-let timerSecond = document.querySelector('.timer-second');
-setInterval(() => {
-    let nowTime = new Date();
-    timerHour.innerHTML = nowTime.getHours() % 12;
-    timerMinute.innerHTML=nowTime.getMinutes();
-    timerSecond.innerHTML = nowTime.getSeconds();
-}, 1000);
-
-
+window.onload = changeImage();
