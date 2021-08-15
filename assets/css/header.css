@@ -80,12 +80,39 @@ header{
 }
 
 /******************* Slide Show **********************/
-.slide{
-    width:100%;
-    max-height:350px;
-    object-fit:fill;
-}
-.slide > img{
+.slideshow{
     width:700px;
-    height:400px;
+    max-height:350px;
+    overflow: hidden;
 }
+.slides{
+    width:1400px;
+    max-height:350px;
+    position:relative;
+}
+.slide{
+    width:700px;
+    height:350px;
+    position:relative;
+    transition:1s;
+}
+.slideDiv{
+    /* border:5px solid red; */
+    position:absolute;
+}
+.readyDiv{
+    /* border:5px solid green; */
+    margin-left:700px;
+}
+
+.slideImg{
+    min-width:700px;
+    height:350px;
+}
+
+/* .slides:hover > .slideDiv{
+    margin-left:-700px;
+}
+.slides:hover > .readyDiv{
+    margin-left:0px;
+} */

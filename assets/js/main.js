@@ -16,22 +16,54 @@ for (let i = 0; i < lis.length; i++) {
     })
 }
 
-let images = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+let images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
 
-let i = 0;
+let slideDiv = document.getElementById("slideDiv");
+let readyDiv = document.getElementById("readyDiv");
 
-let changeImage = () => {
+let divWith = slideDiv.clientWidth;
 
-    if(i < 4){ 
-        i++; 
-        document.slide.src = `./assets/imgs/${images[i]}`;
+let carousel = 0;
+let currentIndex = 2;
+
+
+let moveSlideDiv = () => {
+    if (carousel == 0) {
+        slideDiv.style.marginLeft = - divWith + "px";
+        readyDiv.style.marginLeft = 0 + "px";
+    } else {
+        slideDiv.style.marginLeft = 0 + "px";
+        readyDiv.style.marginLeft = - divWith + "px";
     }
-    else {
-        i = 0;
-        document.slide.src = `./assets/imgs/${images[i]}`;
-    }
-  
-    setTimeout('changeImage()',3000);
+    setTimeout('changeDivPos()', 2000);
 }
 
-window.onload = changeImage();
+let changeDivPos = () => {
+    currentIndex++;
+    if (carousel == 0) {
+        slideDiv.style.display = "none";
+        slideDiv.style.marginLeft = divWith + "px";
+        slideImg.src = `./assets/imgs/${images[currentIndex % 5]}`;
+    } else {
+        readyDiv.style.display = "none";
+        readyDiv.style.marginLeft = divWith + "px";
+        readyImg.src = `./assets/imgs/${images[currentIndex % 5]}`;
+    }
+    setTimeout('changeImage()', 1000);
+}
+
+let changeImage = () => {
+    if (carousel == 0) {
+        carousel = 1;
+        slideDiv.style.display = "block";
+    } else {
+        carousel = 0;
+        readyDiv.style.display = "block";
+    }
+    setTimeout('moveSlideDiv()', 1000);
+}
+
+
+window.onload = moveSlideDiv();
+
+// refactoring
