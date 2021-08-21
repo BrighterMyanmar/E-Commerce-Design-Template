@@ -8,13 +8,31 @@
 
 .enlarge-image{
     max-height:350px;
+    position: relative;
 }
 .enlarge-image > img{
     max-height:350px;
 }
+.lens{
+    width:100px;
+    height:100px;
+    background-color: rgba(225,225,225,0.5);
+    border:1px solid red;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.result{
+    width:300px;
+    height:300px;
+    border:1px solid red;
+    position:absolute;
+    top:50px;
+    left:calc(100% + 50px);
+}
 .enlarge-zoom{
     color:#888;
-    text-align:center;
+    /* text-align:center; */
 }
 .image-group{
     display:grid;
